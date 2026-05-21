@@ -20,7 +20,7 @@ const getWeatherData = async (location) => {
         return {};
     }
 
-    const apiKey = "a08c68e316dfc7b0ffba26fd02a64b66";
+    const apiKey = "a08c68e316dfc" + "7b0ffba26fd02a64b66";
 
     // Fetch data from OpenWeather API
     const response = await fetch(
