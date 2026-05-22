@@ -1,109 +1,120 @@
-# 🌤️ Weather App
+# 🌤 Weather App
 
-A clean, minimal weather application that shows real-time weather data for any city in the world using the OpenWeatherMap API.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![OpenWeather API](https://img.shields.io/badge/OpenWeather_API-EB6E4B?style=flat&logo=openweathermap&logoColor=white)
+![Async/Await](https://img.shields.io/badge/Async%2FAwait-ES6+-blue?style=flat)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
+
+A real-time weather app built with vanilla JavaScript that fetches live weather data using the OpenWeatherMap API. Enter any city name and instantly see temperature, humidity and wind speed — with a dynamic background colour that changes based on how hot or cold it is.
 
 ---
 
-## 🖥️ Live Preview
+## 🌐 Live Demo
 
-> Open `index.html` in your browser, enter any city name, and get instant weather data.
+**[https://jinaljain733-cmd.github.io/weather_app/](https://jinaljain733-cmd.github.io/weather_app/)**
 
 ---
 
 ## ✨ Features
 
-- 🔍 Search weather by any city name
-- 🌡️ Shows temperature in Celsius
-- 💧 Shows humidity percentage
-- 💨 Shows wind speed in m/s
-- 🎨 Background color changes based on temperature
-- 📱 Responsive design — works on all screen sizes
+- Live weather data from OpenWeatherMap API
+- Search any city in the world
+- Shows temperature (°C), humidity (%) and wind speed (m/s)
+- Dynamic background colour changes based on temperature
+- Kelvin to Celsius conversion
+- Clean centered card UI with box shadow
+- `defer` attribute for optimised script loading
+- Handles empty input gracefully
 
 ---
 
-## 🎨 Temperature Color Guide
+## 🌡️ Temperature → Background Colour Logic
 
-| Temperature | Background Color |
-|-------------|-----------------|
-| Below 0°C | 🔵 Light Blue (freezing) |
-| 0°C – 10°C | 🟢 Light Green (cold) |
-| 10°C – 20°C | 🟡 Light Yellow (mild) |
-| 20°C – 30°C | 🟠 Light Salmon (warm) |
-| Above 30°C | 🔴 Light Coral (hot) |
+| Temperature | Background Colour |
+|---|---|
+| Below 0°C | Light Blue ❄️ |
+| 0°C – 9°C | Light Green 🌿 |
+| 10°C – 19°C | Light Yellow ☁️ |
+| 20°C – 29°C | Light Salmon 🌤 |
+| 30°C and above | Light Coral 🔥 |
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Structure |
-| CSS3 | Styling & layout |
-| Vanilla JavaScript | Logic & API calls |
-| OpenWeatherMap API | Real-time weather data |
+| Technology | Usage |
+|---|---|
+| HTML5 | Page structure, semantic markup |
+| CSS3 | Card layout, Flexbox, hover effects |
+| JavaScript (ES6+) | API calls, DOM manipulation, logic |
+| OpenWeatherMap API | Live weather data by city name |
+| Fetch API | HTTP GET request to OpenWeatherMap |
+| Async / Await | Asynchronous data fetching |
+
+---
+
+## 🧠 JavaScript Concepts Used
+
+- `async/await` — clean asynchronous API calls
+- `fetch()` — REST API integration
+- `response.json()` — parsing API response
+- Kelvin to Celsius: `Math.floor(temp - 273.15)`
+- `addEventListener("change")` — triggers search on input change
+- `window.onload` — initialises app on page load
+- `Object.keys(data).length === 0` — empty response check
+- `element.style.backgroundColor` — dynamic inline style
+- `innerHTML` — rendering weather data to DOM
+- Template literals — clean HTML string building
 
 ---
 
 ## 📁 Project Structure
 
 ```
-weather-app/
-├── index.html      # Markup & structure
-├── style.css       # All styles
-├── script.js       # API logic & display
-├── .gitignore      # Git ignore rules
-└── README.md       # This file
+weather_app/
+├── index.html      # App structure
+├── style.css       # Styling
+├── script.js       # API logic & DOM rendering
+└── README.md
 ```
 
 ---
 
-## 🚀 How to Run
+## 🚀 Getting Started
 
-**Option 1 — Direct open:**
-1. Download or clone this repo
-2. Double-click `index.html`
-3. Opens in your browser instantly ✅
+```bash
+# Clone the repo
+git clone https://github.com/jinaljain733-cmd/weather_app.git
 
-**Option 2 — VS Code Live Server:**
-1. Install the **Live Server** extension in VS Code
-2. Right-click `index.html` → **Open with Live Server**
-3. Opens at `http://127.0.0.1:5500`
+# Go into the folder
+cd weather_app
 
----
-
-## 🔑 API Used
-
-- **API:** [OpenWeatherMap – Current Weather Data](https://openweathermap.org/current)
-- **Plan:** Free tier (no payment required)
-- **Endpoint:** `https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}`
-
-> ⚠️ The API key in this project is for learning purposes only. For production use, store your API key in a `.env` file and never commit it to GitHub.
-
----
-
-## 📖 How It Works
-
-```
-User types city name → presses Enter
-         ↓
-JavaScript fetches data from OpenWeatherMap API
-         ↓
-Converts temperature from Kelvin → Celsius
-         ↓
-Displays city, temperature, humidity, wind speed
-         ↓
-Background color updates based on temperature
+# Open in browser
+open index.html
 ```
 
+> **Note:** The app uses the OpenWeatherMap API. If the API key stops working, get a free one at [openweathermap.org](https://openweathermap.org/api) and replace it in `script.js`.
+
 ---
 
-## 🙋‍♂️ Author
+## 📱 Responsive
+
+The card is centered with a fixed width of 350px — works cleanly on both desktop and mobile screens.
+
+---
+
+## 👤 Author
 
 **Jinal Jain**
 - GitHub: [@jinaljain733-cmd](https://github.com/jinaljain733-cmd)
+- LinkedIn: [linkedin.com/in/jinal-jain-08b70328b](https://linkedin.com/in/jinal-jain-08b70328b)
 
 ---
 
 ## 📄 License
 
-This project is open source and free to use for learning purposes.
+This project is open source and available under the [MIT License](LICENSE).
+
+> ⚠️ Please do not reuse or redistribute this project as your own work.
