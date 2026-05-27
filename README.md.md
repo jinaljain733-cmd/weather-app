@@ -13,7 +13,7 @@ A real-time weather app built with vanilla JavaScript that fetches live weather 
 
 ## 🌐 Live Demo
 
-**[https://jinaljain733-cmd.github.io/weather_app/](https://jinaljain733-cmd.github.io/weather_app/)**
+**[https://jinaljain733-cmd.github.io/weather-app/](https://jinaljain733-cmd.github.io/weather-app/)**
 
 ---
 
@@ -86,7 +86,7 @@ weather_app/
 
 ```bash
 # Clone the repo
-git clone https://github.com/jinaljain733-cmd/weather_app.git
+git clone https://github.com/jinaljain733-cmd/weather-app.git
 
 # Go into the folder
 cd weather_app
