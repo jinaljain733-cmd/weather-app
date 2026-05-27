@@ -73,7 +73,7 @@ A real-time weather app built with vanilla JavaScript that fetches live weather 
 ## 📁 Project Structure
 
 ```
-weather_app/
+weather-app/
 ├── index.html      # App structure
 ├── style.css       # Styling
 ├── script.js       # API logic & DOM rendering
@@ -89,7 +89,7 @@ weather_app/
 git clone https://github.com/jinaljain733-cmd/weather-app.git
 
 # Go into the folder
-cd weather_app
+cd weather-app
 
 # Open in browser
 open index.html
